@@ -314,7 +314,7 @@ def parse_tag_pair(target: str):
     tags = target.split(";")
     name = tags[0]
     tag_pair = {}
-    for i in range(1, len(tags) - 1):
+    for i in range(1, len(tags)):
         tag = tags[i]
         key, value = tag.split("=")
         tag_pair[key] = value
